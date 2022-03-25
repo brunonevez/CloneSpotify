@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+}
+/* menu toogle */
+
+.mobile-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 38px;
+        float: right;
+        display: block;
+        cursor: pointer;
+        display: none;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+/* .mobile-menu .um{
+    margin: 5px;
+    width: 40px;
+    height: 6px;
+    background: #fff;
+    border-radius: 2px;
+}
+.mobile-menu .dois{
+    margin: 5px;
+    width: 40px;
+    height: 6px;
+    background: #fff;
+    border-radius: 2px;
+}
+.mobile-menu .tres{
+    margin: 5px;
+    width: 40px;
+    height: 6px;
+    background: #fff; 
+    border-radius: 2px;
+} */
+.navbar{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-size: 12px;
+    font-weight:  bold;
+    color: white;
+}
+.navbar img{
+    display: flex;
+    margin-right:  auto;
+    float: left;
+    height: 40px;
+}
+.container-top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%; 
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+.nav-list li:hover{
+    color: #1ED760;
+    cursor: pointer;
+}
+.main-banner{
+    height: 100vh;
+    background-color: rgb(41, 65, 171);
+    background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+    background-position: 46% 6%;
+    -webkit-box-pack: center;
+    background-size: 167%; 
+    min-height: 846px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-banner h2{
+    text-align: center;
+    font-size: 152px;
+    width: 1020px;
+    color: #1ED760;
+}
+.main-banner p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 40px;
+    width: 1020px;
+    color: #1ED760;
+}
+.main-banner .button-spoty-banner{
+    border: none;
+    border-radius: 25px;
+    font-weight:  bold;
+    padding: 14px 32px;
+    background: #1ED760;
+    color: rgb(41, 65, 171);
+}
+.banner-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-banner .button-spoty-banner:hover{
+   transform: scale(1.03);
+   background: #31d66b;
+}
+footer{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 50px;
+    font-size: 16px;
+}
+footer .footer-list{
+    width: 60%;
+}
+footer .box-list{
+    display: flex;  
+}
+footer .list{
+    width: 100%;
+    padding: 0 15px;
+    margin: 20px 0;
+}
+footer img{
+    height: 40px;
+    top: 20px;
+}
+
+footer li{
+    list-style: none;
+    padding:  10px 0 20px;
+}
+footer .guide{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.end{
+    font-size: 12px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+footer .list-guide{
+    display: flex;
+    font-size: 12px;
+    width: 50%;
+    flex-direction: row;   
+}
+.space li{
+    margin: 0 5px;
+}
+footer a:hover{
+    color: #31d66b;
+    cursor: pointer;
+}
+
+
+@media(max-width: 1200px){
+    body{
+        overflow-x: hidden ;
+    }
+    .main-banner{
+        background-image: url('../img/fundo-tablet.svg');
+        background-size: 153%;
+        background-position: right 40% center;
+        background-repeat: no-repeat;
+    }
+    .main-banner h2{
+        width: 800px;
+        font-size: 156px;
+        line-height: 166px;
+        padding-bottom: 40px;
+    }
+    .main-banner p{
+        padding-bottom: 40px;
+        width: 312px;
+    }
+    .container-top{
+        width: 80%;;
+    }
+    
+}
+@media(max-width: 550px){
+    body{
+        overflow-x: hidden;
+    }
+    .main-banner{
+        background-image: url('../img/fundo-mobile.svg');
+        background-size: 153%;
+        background-position: right 40% center;
+        -webkit-box-pack: center;
+        justify-content: center;
+    }
+    .main-banner h2{
+        display: block;
+        font-size: 48px;
+        line-height: 56px;
+        padding-bottom: 40px;
+    }
+    .main-banner p{
+        padding-bottom: 32;
+        width: 312px;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-list{
+        width: 100%;  
+    }
+    footer .box-list{  
+        flex-direction: column;
+    }
+    footer .guide{
+        flex-direction: column;
+        width: 100%; 
+    }
+    footer .list-guide{
+        margin: 15px;
+        flex-direction: column;
+    }
+    footer .end{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin: 17px;
+    }
+}
+@media(max-width: 992px){
+      body{
+          overflow-x: hidden ;
+      }
+    .nav-list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform:  translateX(100%);
+        
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+.nav-list.active{
+    transform: translateX(0);
+}
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .um {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .dois {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .tres {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
