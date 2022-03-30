@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="header-container">
+                <img src="./img/logo-preto.png">
+                <h2>Inscreva-se grátis e comece a curtir.</h2>
+            </div>    
+
+                <div class="loggin-externo">
+                    <a class="btn-face"> <i class="bi bi-facebook"></i> Inscrever-se com o Facebook</a>
+                    <a class="btn-google"><i class="bi bi-google"></i> Inscrever-se com o Google</a>
+                </div>
+                
+           
+            
+            <span class="span-diviser">ou</span>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label>Qual é o seu e-mail?</label>
+                    <input type="text" placeholder="insira seu e-mail.">
+                    <span  class="notify-register">usar telefone celular?</span>
+                </div>
+
+                <div class="input-box">
+                    <label>Confirme seu e-mail</label>
+                    <input type="text" placeholder="insira o e-mail novamente.">
+                </div>
+
+                <div class="input-box">
+                    <label>Crie uma senha</label>
+                    <input type="password" placeholder="insira seu e-mail.">
+                </div>
+
+                <div class="input-box">
+                    <label>Como devemos chamar você?</label>
+                    <input type="text" placeholder="insira um nome de perfil.">
+                    <span class="notify-register">isso será exibido no seu perfil.</span>
+                </div>
+
+                <div class="input-title">
+                    <label>Qual a sua data de nascimento?</label>
+                </div>
+            </div>    
+
+                <div class="input-box-data">
+                    <div class="input-day">
+                        <label>Dia</label>
+                        <div class="input-box">
+                            
+                            <input type="day" placeholder="DD">
+                        </div>
+                    </div>
+                    <div class="input-month">
+                        <div class="input-title-data">
+                            <label>Mês</label>
+                        </div>    
+                        <div class="input-box"> 
+                            <select name="mes" id="">
+                                <option value="janeiro">janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-year">   
+                        <label>Ano</label>
+                        <div class="input-box">                     
+                            <input type="data" placeholder="AAAA">  
+                        </div>
+                    </div>       
+                </div>
+                
+                    <div class="input-box">
+                        <label>Qual é o seu gênero?</label>
+                    </div>
+                    <div class="input-group-radio">
+                        <div class="input-radio">
+                            <input type="radio" name="Masculino" value="Masculino" id="masculino">
+                            <label for="html">Masculino</label><br>
+                        </div>
+                        
+                        <div class="input-radio">
+                            <input type="radio" name="Feminino" value="Feminino" id="feminino">
+                            <label for="html">Feminino</label>
+                        </div>
+
+                        <div class="input-radio">
+                            <input type="radio" name="naobinario" value="Naobinario" id="Naobinario">
+                            <label for="html">Não binario</label>
+                        </div>
+                    </div>
+
+                    <div class="term-group">
+                        <div class="term">
+                            <input type="checkbox" id="nomensage" name="nomensage" value="nomensage">
+                            <label for="nomensage">Não quero receber mensagens de marketing do Spotify</label>
+                        </div>
+                    </div>
+                    <div class="term-group">
+                        <div class="term">
+                            <input type="checkbox" id="nocompart" name="nocompart" value="nocompart">
+                            <label for="nocompart">Compartilhar meus dados cadastrais com os provedores de conteúdo do Spotify para fins de marketing.</label>
+                        </div>
+                    </div>
+                    <div class="term-group">
+                        <div class="term">
+                            <input type="checkbox" id="acceptterm" name="acceptterm" value="acceptterm">
+                            <label for="acceptterm">Eu concordo com os <a>Termos e Condições de Uso do Spotify.</a></label>
+                        </div>
+                    </div>
+
+
+                    <div id="checkbox-container">
+                        <div style="width: 304px; height: 78px;">
+                            <div>
+                                <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/enterprise/anchor?ar=1&amp;k=6LeO36obAAAAALSBZrY6RYM1hcAY7RLvpDDcJLy3&amp;co=aHR0cHM6Ly93d3cuc3BvdGlmeS5jb206NDQz&amp;hl=pt-BR&amp;v=gZWLhEUEJFxEhoT5hpjn2xHK&amp;size=normal&amp;cb=ssemj5wo9fye" width="304" height="78" role="presentation" name="a-9w48w6olnvje" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox">
+
+                                </iframe>
+                            </div>
+                                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;">
+                                </textarea>
+                        </div>
+                        <iframe style="display: none;">
+                        </iframe>
+                    </div>
+
+                    <span class="term-politic">
+                        Para saber mais sobre como o Spotify coleta, utiliza, compartilha e <a>protege seus dados pessoais, <a> leia a Política de Privacidade do Spotify.</a>
+                    </span>
+
+                    <div class="group-button-register">
+                        <button class="button-register">Inscrever-se</button>
+                    </div>
+
+                    <div class="group-login">
+                        <span>Já tem uma conta? <a>Faça login.</a></span>
+                    </div>
+            
+        </div>
+    </section>  
+</body>
+</html>

@@ -1,47 +1,11 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks, ocultList) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.ocultList = document.querySelector(ocultList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
-  
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-  
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.ocultList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
-  
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-  
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this;
-    }
-  }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-    ".list-ocult",
-  );
-  mobileNavbar.init();
+function menuToggle(){
+    const toggleMenu = document.querySelector('.menu-toggle');
+    const menuList = document.querySelector('.nav-list'); 
+    const container = document.querySelector('.container');
+    const listOcult = document.querySelector('.list-ocult');
+
+    toggleMenu.classList.toggle('active');
+    menuList.classList.toggle('active');
+    container.classList.toggle('active'); 
+    listOcult.classList.toggle('active');
+}

@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+section .container{
+    background-color: #fff;
+    max-width: 450px;
+    margin: 0px auto;
+    padding-bottom: 130px;
+    flex-direction: column;
+}
+section .header-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    padding: 40px 0px 32px;
+}
+section h2{
+   text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 40px 0 0;
+    line-height: 40px;
+}
+section .btn-face{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 312px;
+    padding: 6px 24px;
+    font-size: 16px;
+    color: #fff;
+    background: #405a93;
+    border-radius: 25px;
+    margin: 0 0 22px;   
+}
+section i{
+    font-size: 24px;
+    padding: 5px 16px 0 0;
+}
+section .loggin-externo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .btn-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 312px;
+    padding: 6px 24px;
+    font-size: 16px;
+    color: #fff;
+    background: #fff;
+    border-radius: 25px;
+    color: rgb(83, 83, 83);
+    border: 2px solid rgb(83, 83, 83);
+    margin: 0 0 22px;
+}
+section img{
+    display: flex;  
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    height: 40px;
+}
+section .span-diviser{
+    display: table;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    margin: 0px auto 1em;
+    color: rgb(127, 127, 127);
+    position: relative;
+    text-align: center;
+    width: 85%;
+}
+section .notify-register{
+    padding: 8px 0  0  0 ;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 13px;
+}
+section .span-diviser::before, section .span-diviser::after{
+    border-top: 1px solid rgb(204,204,204);
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.8em;
+    width: 42%;
+}
+section .input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+section .input-box{
+    padding: 0 0 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+section .input-box label{
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    justify-self: start;
+    align-items: flex-start;
+    font-weight: bold;
+    padding: 0 0 8px ;
+}
+section .input-box input{
+    height: 52px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
+    border-radius: 4px;
+    padding: 14px;
+    width: 100%;
+}
+section .input-title{
+    width: 100%;
+}
+section .input-title label{
+    font-weight: bold;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start; 
+}
+section .input-box-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+section .input-box-data .input-day{
+    width: 20%;
+}
+section .input-box-data .input-month{
+    width: 45%;
+}
+section .input-box-data .input-year{
+    width: 25%;
+}
+
+section .input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .input-day input{
+    height: 52px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
+    border-radius: 4px;
+    padding: 14px 0 14px  14px;
+    width: 100%;
+}
+section .input-month select {
+    height: 52px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
+    border-radius: 4px;
+    padding: 14px 0 14px  14px;
+    width: 100%;
+}
+section .input-year input{
+    height: 52px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 1px var(--essential-subdued,#878787);
+    border-radius: 4px;
+    padding: 14px 0 14px  14px;
+    width: 100%;
+}
+section .input-group-radio{
+    padding-bottom: 24px;
+    display: flex;
+}
+section .input-radio input{
+    height: 16px;
+    user-select: none;
+    width: 16px; 
+}
+section .input-radio label{
+    padding: 0 24px 0 12px;
+}
+section .term-group{
+    padding-bottom: 24px;
+}
+section .term{
+    position: relative;
+    min-height: 32px;
+    display: flex;   
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+section .term label{
+    padding: 0 0 0 14px;
+    font-size: 0.875rem;
+}
+section .term input{
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    background: transparent;
+    border-radius: 3px;
+    display: inline-block;
+    height: 16px;
+    user-select: none;
+    width: 16px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    top: 0px;
+    position: relative;
+} 
+section #checkbox-container{
+    padding-bottom: 24px;
+}
+section .term-politic{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+    padding-bottom: 24px;
+}
+section .group-button-register{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+section .button-register{
+    padding: 16px 48px 16px 48px;
+    background-color:#1ed760 ;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+section .button-register:hover{
+    transform: scale(1.03);
+    background-color:#31df6d ;
+}
+section .group-login{
+    display: flex;
+    justify-content: center;
+}

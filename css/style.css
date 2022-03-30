@@ -3,30 +3,7 @@
     padding: 0;
     font-family: Arial,sans-serif;
 }
-/* menu toogle */
-
-.mobile-menu{
-        z-index: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-        height: 38px;
-        float: right;
-        display: block;
-        cursor: pointer;
-        display: none;
-}
-  .mobile-menu div {
-    
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
-
-.navbar{
+header{
     width: 100%;
     min-height: 80px;
     display: flex;
@@ -35,24 +12,23 @@
     background-color: #000;
     font-size: 12px;
     font-weight:  bold;
-    color: white;
+    color: white;  
 }
-.navbar img{
+header img{
     display: flex;
-    margin-right:  auto;
-    float: left;
+    margin-right: auto;
     height: 40px;
 }
-.container-top{
+.container{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     width: 60%; 
 }
 .nav-list{
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 .nav-list li{
     letter-spacing: 3px;
@@ -63,7 +39,6 @@
     cursor: pointer;
 }
 .list-ocult{
-    
     display: none;
 }
 .main-banner{
@@ -123,7 +98,8 @@ footer .footer-list{
     width: 60%;
 }
 footer .box-list{
-    display: flex;  
+    display: flex;
+    flex-wrap: wrap;  
 }
 footer .list{
     width: 100%;
@@ -138,7 +114,6 @@ footer img{
 footer li{
     list-style: none;
     padding:  10px 0 20px;
-    
 }
 footer h3{
     padding-bottom: 1px;
@@ -190,17 +165,41 @@ footer i{
     font-size: 20px;
 }
 
+/* animação menu */
+/* .mobile-menu.active .um {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .dois {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .tres {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  @keyframes navLinkFade {
+    from {
+    opacity: 0;
+    transform: translateX(50px);
+    }       
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    
+    }
+} */
+
 
     /* media query */
 @media(max-width: 1200px){
-    body{
-        overflow-x: hidden ;   
-    }
+    
     .main-banner{
         background-image: url('../img/fundo-tablet.svg');
-        background-size: 153%;
-        background-position: right 40% center;
+        background-size: 175%;
+        background-position: 46% 4%;
         background-repeat: no-repeat;
+        min-height: 846px;
     }
     .main-banner h2{
         width: 800px;
@@ -212,27 +211,123 @@ footer i{
         padding-bottom: 40px;
         width: 312px;
     }
-    .container-top{
+    .container{
         width: 80%;;
     }
     
 }
-@media(max-width: 550px){
-    body{
-        overflow-x: hidden;
+
+
+@media(max-width: 992px){
+      
+    header{
+        height: 54px;
+    }  
+    .logo{
+        height: 28px;
     }
+    header .nav-list{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header ul li{
+        padding: 10px;
+    }
+    header .list-ocult{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-top:50%;
+    }
+    header ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.979);
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+    header ul li{
+        font-size: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header ul.active{
+        visibility: visible;
+        opacity: 1;
+    }
+    .container.active{
+        width: 100%;
+    }
+    .menu-toggle{
+        background-image: url('../img/menu/menu.png');
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        z-index: 2;
+        
+    }
+    .menu-toggle.active{
+        background-image: url('../img/menu/close.png');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        z-index: 2;
+        margin: 0 10%;
+        
+    }
+    .list-ocult.active{
+        display: block;
+    }
+} 
+
+@media (max-width: 768px){
+    .main-banner h2{
+        font-size: 64px;
+        line-height: 72px;
+        letter-spacing: -2px;
+    }
+}
+
+@media(max-width: 480px){
+    
+    header{
+        min-height: 54px;
+    } 
+    header img{
+        height: 28px;
+    }
+    .container{
+        width: 80%;
+    } 
     .main-banner{
-        background-image: url('../img/fundo-mobile.svg');
-        background-size: 153%;
+        background-image: url('../img/fundo.svg');
+        background-size: 200%;
         background-position: right 40% center;
         -webkit-box-pack: center;
-        justify-content: center;
+        justify-content: center;   
     }
     .main-banner h2{
         display: block;
-        font-size: 48px;
+        font-size: 42px;
         line-height: 56px;
         padding-bottom: 40px;
+        width: 312px;
+        padding: 0px 0px 0.67em;
     }
     .main-banner p{
         padding-bottom: 32;
@@ -265,70 +360,3 @@ footer i{
         margin: 17px;
     }
 }
-@media(max-width: 992px){
-      body{
-          overflow-x: hidden;
-      }
-    .navbar{
-        height: 54px;
-    }  
-    .nav-list{ 
-        position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 90vw;
-        height: 100vh;
-        background: #000;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        transform:  translateX(100%);
-        
-    }
-    .nav-list li{
-        font-size: 2rem;
-        margin: 20px 20px;
-        opacity: 0;
-
-    }
-    .mobile-menu{
-        display: block; 
-    }
-    }
-    .nav-list.active{
-        
-        transform: translateX(0);
-
-    }
-    .list-ocult.active{
-        display: flex;
-        padding-top: 50%;  
-    }
-    body.active{
-        overflow-x: hidden;
-    }
-    
-    @keyframes navLinkFade {
-        from {
-        opacity: 0;
-        transform: translateX(50px);
-        }       
-        to {
-        opacity: 1;
-        transform: translateX(0);
-        
-        }
-    }
-  
-  .mobile-menu.active .um {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .dois {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .tres {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
