@@ -40,16 +40,6 @@ section .btn-face{
     border-radius: 25px;
     margin: 0 0 22px;   
 }
-section i{
-    font-size: 24px;
-    padding: 5px 16px 0 0;
-}
-section .loggin-externo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 section .btn-google{
     display: flex;
     align-items: center;
@@ -64,6 +54,21 @@ section .btn-google{
     border: 2px solid rgb(83, 83, 83);
     margin: 0 0 22px;
 }
+section .btn-face:hover, .btn-google:hover{
+    border: 2px solid #000;
+    cursor: pointer;
+}
+section i{
+    font-size: 24px;
+    padding: 5px 16px 0 0;
+}
+section .loggin-externo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 section img{
     display: flex;  
     justify-content: center;
@@ -262,4 +267,30 @@ section .button-register:hover{
 section .group-login{
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 768px){
+    *{
+        box-sizing: border-box;
+    }
+    section{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    section .header-container{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    section .container{
+        display: flex;
+    }
+    
+    section img{
+        height: 42px;
+        padding: 0px 0px 6px;
+    }
+    section .button-register{
+        width: 100%;
+    }
+    
 }

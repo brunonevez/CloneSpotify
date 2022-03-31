@@ -3,6 +3,10 @@
     padding: 0;
     font-family: Arial,sans-serif;
 }
+header .nav-list li a{
+    text-decoration: none;
+    color:#fff;
+}
 header{
     width: 100%;
     min-height: 80px;
@@ -34,7 +38,7 @@ header img{
     letter-spacing: 3px;
     margin-left: 32px;
 }
-.nav-list li:hover{
+.nav-list a:hover{
     color: #1ED760;
     cursor: pointer;
 }
@@ -223,7 +227,8 @@ footer i{
     header{
         height: 54px;
     }  
-    .logo{
+    header img{
+        padding: 10px 0  10px 0 ;
         height: 28px;
     }
     header .nav-list{
@@ -342,8 +347,15 @@ footer i{
         width: 100%;  
     }
     footer .box-list{  
+        /* padding-left: 24px;
+        padding-right: 24px; */
+        display: flex;
         
-        flex-direction: column;
+    }
+    footer .box-list img{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     footer .guide{
         flex-direction: column;
