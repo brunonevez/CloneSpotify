@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: spotify-circular, Helvetica, Arial, sans-serif;
-
+    font-family: Montserrat ,sans-serif;
 }
 
 section{
@@ -62,7 +61,8 @@ section .btn-apple{
 }
 section .btn-number{
     padding: 13px 31px;
-    font-size: 16px;
+    font-size: 0.850rem;
+    letter-spacing: 1px;
     color: #fff;
     background: #fff;
     color: rgb(83, 83, 83);
@@ -74,10 +74,11 @@ section .btn-face, .btn-apple, .btn-google, .btn-number{
     justify-content: center;
     width: 85%;
     padding: 13px 31px;
-    font-size: 16px;
+    font-size: 0.850rem;
+    letter-spacing: 1px;
     border-radius: 35px;
     border: 1px solid var(--essential-subdued,#878787);
-    margin: 0 0 22px;
+    margin: 0 0 12px;
     line-height: 20px;
     font-weight: 600;
     cursor: pointer;
@@ -113,12 +114,12 @@ section .span-diviser{
     width: 100%;
 }
 section .notify-password{
-    padding: 15px 0  0  0 ;
+    padding: 12px 0  0  0 ;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 13px;
+    font-size: 14px;
 }
 section .notify-login{
     padding: 8px 0  0  0 ;
@@ -145,7 +146,7 @@ section .input-group{
     width: 100%;
 }
 section .input-box{
-    padding: 0 0 20px;
+    padding: 0 0 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -153,12 +154,12 @@ section .input-box{
     flex-direction: column;
 }
 section .input-box label{
-    font-size: 14px;
+    font-size: 12px;
     width: 100%;
     display: flex;
     justify-self: start;
     align-items: flex-start;
-    font-weight: bold;
+    font-weight: 800;
     padding: 0 0 8px ;
 }
 section .input-box input{
@@ -169,6 +170,7 @@ section .input-box input{
     border-radius: 4px;
     padding: 14px;
     width: 100%;
+    font-size: 1rem;
 }
 section .input-group-login{
     display: flex;
@@ -178,6 +180,10 @@ section .input-group-login{
 section .flag-remember{
     display: flex;
     align-items: center;
+}
+section .flag-remember label{
+    font-size: 0.800rem;
+    margin: 0 10px;
 }
 section .button-get-in{
     border: none;
@@ -193,7 +199,7 @@ section .button-get-in:hover{
 
 }
 section .break-line{
-    margin: 20px 0px 20px;
+    margin: 25px 0px 25px;
     flex: 1 1 0%;
     border-top: 1px solid rgb(217, 218, 220);
 }
@@ -213,7 +219,8 @@ section .sing-up-box{
 section .sing-up h3{
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+    font-size: 18px;
     
 }
 section .sing-up-box a{
@@ -221,6 +228,9 @@ section .sing-up-box a{
     text-decoration: none;
     cursor: pointer;
     color: rgb(83, 83, 83);
+}
+section .sing-up-box:hover{
+    border: 1px solid #000;
 }
 section .sing-group{
     display: flex;

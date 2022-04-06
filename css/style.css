@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial,sans-serif;
+    font-family: Montserrat ,sans-serif;
 }
 header .nav-list li a{
     text-decoration: none;
@@ -14,8 +14,6 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #000;
-    font-size: 12px;
-    font-weight:  bold;
     color: white;  
 }
 header img{
@@ -25,8 +23,11 @@ header img{
 }
 .container{
     display: flex;
-    justify-content: flex-end;
     width: 60%; 
+}
+.container nav{
+    display: flex;
+    width: 100%;
 }
 .nav-list{
     list-style: none;
@@ -35,9 +36,21 @@ header img{
     align-items: center;
 }
 .nav-list li{
-    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: 700;
     margin-left: 32px;
+    opacity: 1;
+    transform: translateZ(0) scale(1); 
 }
+.nav-list{
+    animation: delay 0.5s ;
+    position: relative;
+}
+@keyframes delay {
+    0% {right: -200px;}
+    100%{right: 0px;}
+}
+
 .nav-list a:hover{
     color: #1ED760;
     cursor: pointer;
@@ -45,7 +58,7 @@ header img{
 .list-ocult{
     display: none;
 }
-.main-banner{
+.banner-info{
     height: 100vh;
     background-color: rgb(41, 65, 171);
     background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
@@ -57,25 +70,29 @@ header img{
     justify-content: center;
     align-items: center;
 }
-.main-banner h2{
+.banner-info h2{
     text-align: center;
-    font-size: 152px;
+    font-size: 138px;
     width: 1020px;
     color: #1ED760;
+    padding: 0 0 40px;
+    letter-spacing: -10px;
 }
-.main-banner p{
+.banner-info p{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 24px;
     padding-bottom: 40px;
     width: 1020px;
     color: #1ED760;
+    padding: 0 0 40px;
 }
-.main-banner .button-spoty-banner{
+.banner-info .button-spoty-banner{
     border: none;
     border-radius: 25px;
-    font-weight:  bold;
-    padding: 14px 32px;
+    font-weight: 600;
+    padding: 16px 30px;
     background: #1ED760;
     color: rgb(41, 65, 171);
 }
@@ -85,7 +102,7 @@ header img{
     align-items: center;
     flex-direction: column;
 }
-.main-banner .button-spoty-banner:hover{
+.banner-info .button-spoty-banner:hover{
    transform: scale(1.03);
    background: #31d66b;
 }
@@ -95,19 +112,21 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0 50px;
+    /* padding: 80px 0 50px; */
     font-size: 16px;
+    
 }
 footer .footer-list{
     width: 60%;
+    padding: 80px 0 50px;
 }
 footer .box-list{
-    display: flex;
-    flex-wrap: wrap;  
-}
-footer .list{
     width: 100%;
-    padding: 0 15px;
+    display: flex;
+    flex-direction: row;  
+}
+footer .list{ 
+    width: 100%;
     margin: 20px 0;
 }
 footer img{
@@ -118,15 +137,27 @@ footer img{
 footer li{
     list-style: none;
     padding:  10px 0 20px;
+    font-size: 14px;
 }
 footer h3{
-    padding-bottom: 1px;
+    margin: 20px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: #919496;
 }
 footer .guide{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
+footer .guide li{
+    font-size: 12px;
+    color: #919496;
+}
+footer .list-start{
+    color: #919496;
+    }
 .end{
     font-size: 12px;
     display: flex;
@@ -134,13 +165,15 @@ footer .guide{
     align-items: end;
 }
 footer .list-guide{
+    width: 100%;
     display: flex;
     font-size: 12px;
-    width: 50%;
     flex-direction: row;   
 }
 .space li{
-    margin: 0 5px;
+    
+    margin: 0 10px;
+    width: 100%;
 }
 footer a:hover{
     color: #31d66b;
@@ -169,54 +202,36 @@ footer i{
     font-size: 20px;
 }
 
-/* animação menu */
-/* .mobile-menu.active .um {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .dois {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .tres {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
-
-  @keyframes navLinkFade {
-    from {
-    opacity: 0;
-    transform: translateX(50px);
-    }       
-    to {
-    opacity: 1;
-    transform: translateX(0);
-    
-    }
-} */
-
 
     /* media query */
 @media(max-width: 1200px){
     
-    .main-banner{
+    .banner-info{
         background-image: url('../img/fundo-tablet.svg');
         background-size: 175%;
         background-position: 46% 4%;
         background-repeat: no-repeat;
         min-height: 846px;
     }
-    .main-banner h2{
+    .banner-info h2{
         width: 800px;
-        font-size: 156px;
-        line-height: 166px;
+        font-size: 104px;
+        line-height: 104px;
         padding-bottom: 40px;
+        text-align: center;
     }
-    .main-banner p{
+    .banner-info p{
         padding-bottom: 40px;
         width: 312px;
     }
     .container{
-        width: 80%;;
+        width: 100%;
+        margin: 0 30px;
+    }
+    footer .box-list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     
 }
@@ -225,7 +240,7 @@ footer i{
 @media(max-width: 992px){
       
     header{
-        height: 54px;
+        min-height: 54px;
     }  
     header img{
         padding: 10px 0  10px 0 ;
@@ -280,8 +295,8 @@ footer i{
         height: 40px;
         width: 40px;
         cursor: pointer;
-        z-index: 2;
-        
+        z-index: 2;  
+        padding: 0 0 10px;   
     }
     .menu-toggle.active{
         background-image: url('../img/menu/close.png');
@@ -291,22 +306,25 @@ footer i{
         height: 40px;
         width: 40px;
         cursor: pointer;
-        z-index: 2;
-        margin: 0 10%;
-        
+        z-index: 2;    
     }
     .list-ocult.active{
         display: block;
     }
-} 
-
+    .nav-list{
+        position: fixed;
+    }
+    
+}
 @media (max-width: 768px){
-    .main-banner h2{
+    .banner-info h2{
         font-size: 64px;
         line-height: 72px;
         letter-spacing: -2px;
     }
-}
+  
+} 
+
 
 @media(max-width: 480px){
     
@@ -316,17 +334,20 @@ footer i{
     header img{
         height: 28px;
     }
+    header ul{
+        width: 100vw;   
+    }
     .container{
         width: 80%;
     } 
-    .main-banner{
+    .banner-info{
         background-image: url('../img/fundo.svg');
         background-size: 200%;
         background-position: right 40% center;
         -webkit-box-pack: center;
         justify-content: center;   
     }
-    .main-banner h2{
+    .banner-info h2{
         display: block;
         font-size: 42px;
         line-height: 56px;
@@ -334,7 +355,7 @@ footer i{
         width: 312px;
         padding: 0px 0px 0.67em;
     }
-    .main-banner p{
+    .banner-info p{
         padding-bottom: 32;
         width: 312px;
     }
@@ -345,12 +366,10 @@ footer i{
     }
     footer .footer-list{
         width: 100%;  
+        padding: 15px;
     }
     footer .box-list{  
-        /* padding-left: 24px;
-        padding-right: 24px; */
-        display: flex;
-        
+        display: flex;       
     }
     footer .box-list img{  
         display: flex;
@@ -358,17 +377,22 @@ footer i{
         align-items: center;
     }
     footer .guide{
-        flex-direction: column;
-        width: 100%; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .list-start{
+        margin: 10px;
     }
     footer .list-guide{
-        margin: 15px;
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        
     }
     footer .end{
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
-        margin: 17px;
+        
     }
+   
 }
