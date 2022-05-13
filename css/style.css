@@ -171,7 +171,6 @@ footer .list-guide{
     flex-direction: row;   
 }
 .space li{
-    
     margin: 0 10px;
     width: 100%;
 }
@@ -257,9 +256,7 @@ footer i{
     }
     header .list-ocult{
         display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        padding-top:50%;
+        justify-content: space-between;
     }
     header ul{
         position: fixed;
@@ -284,6 +281,10 @@ footer i{
         visibility: visible;
         opacity: 1;
     }
+    header .nav-list li
+    {
+        font-size: 30px;  
+    }
     .container.active{
         width: 100%;
     }
@@ -306,13 +307,15 @@ footer i{
         height: 40px;
         width: 40px;
         cursor: pointer;
-        z-index: 2;    
+        z-index: 2;   
+
     }
     .list-ocult.active{
         display: block;
     }
     .nav-list{
         position: fixed;
+        overflow: hidden; 
     }
     
 }
